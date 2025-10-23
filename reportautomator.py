@@ -16,7 +16,7 @@ for i in range(student_num):
 	student = (name,matr)
 	student_list.append(student)
 
-file_path_str = f"[INF1316 - 3WB] Lab {lab_num} - " + ", ".join(student[0] for student in student_list)
+file_path_str = f"[INF1316 - 3WB] Lab {lab_num} - " + " ".join(student[0] for student in student_list)
 
 file_path = lab_path/file_path_str
 
@@ -33,8 +33,6 @@ for i in range(questionNum):
 
 
 codeList = []
-
-	
 
 for c_file in sorted(lab_path.glob("lab*e*.c")):
 	with open(c_file, "r") as f:
